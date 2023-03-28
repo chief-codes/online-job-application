@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-compatible" content="">
+        <meta name="viewport" content="width=device">
+
+        <title>Job Application</title>
+        <link rel="stylesheet" type="text/css" href="./static/applicationstyle.css">
+    </head>
+
+    <body>
+
+        <div class="container">
+            <div class="apply_box">
+                <h1>
+                    Job Application
+                    <span class="title_small">(web)</span>
+                </h1>
+                
+                <form action="/form" method="POST">
+                    <div class="form_container">
+
+                        <div class="form_control"> 
+                            <label for="full_name"> Full Name </label>
+                            <input
+                                id="full_name"
+                                name="full_name"
+                                placeholder="Enter Full Name..."
+                                required
+                            />
+                        </div>
+
+                        <div class="form_control"> 
+                            <label for="email"> Email </label>
+                            <input
+                                type="email"
+                                id="email"
+                                name="email"
+                                placeholder="Enter E-mail..."
+                                required
+                            />
+                        </div>
+
+                        <div class="form_control">
+                            <label for="date"> D.O.B </label>
+                            <input value="1999-05-30" type="date" id="date" name="date" />
+                        </div>
+
+                        <div class="form_control"> 
+                            <label for="job-role"> Job Role </label>
+                            <input
+                                id="job-role"
+                                name="job-role"
+                                placeholder="Enter Job Role..."
+                                required
+                            />
+                        </div>
+
+                        <div class="textarea_control">
+                            <label for="address"> Address </label>
+                            <textarea
+                            id="address"
+                            name="address"
+                            row="2"
+                            cols="50"
+                            placeholder="Enter Your Address"
+                            required
+                            ></textarea>
+                        </div>
+
+                        <div class="form_control">
+                            <label for="city"> City </label>
+                            <input
+                            id="city"
+                            name="city"
+                            placeholder="Enter City Name"
+                            required
+                            />
+                        </div>
+
+                        <div class="form_control">
+                            <label for="upload"> Upload your CV </label>
+                            <input
+                            type="file"
+                            id="cv"
+                            name="cv"
+                            required 
+                            />
+                        </div>
+
+                    </div>
+
+                    <div class="button_container">
+                        <button type="submit"> Apply Now </button>
+                    </div>
+
+                </form>
+            </div>
+
+        </div>
+
+    </body>
+</html>
